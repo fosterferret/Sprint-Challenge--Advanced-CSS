@@ -1,1 +1,32 @@
 // Mixins Here
+.flexCentered (){
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGenerator (@buttonColor: rgb(35, 40, 57), @borderColor: rgb(43, 125, 238), @width: 100px, @height: 50px, @marginTop: 13px) {
+    background: @buttonColor;
+    font-size: 1.6rem;
+    border: 1px solid @borderColor;
+    border-radius: 5px;
+    font-family: Helvetica, Arial, system-ui, Sans-Serif;
+    color: white;
+    margin-top: @marginTop;
+    padding: 1rem 2rem;
+    width: @width;
+    height: @height;
+    align-items: center;
+    .flexCentered();
+    }
+    
+    .inputGenerator() {
+        background: #fcfdfd;
+        border-radius: 3px;
+        border: 1px solid rgba(3,54,61,.25);
+        box-shadow: none;
+        color: rgba(17,51,56,.73);
+        font: 16px/1;
+        height: 50px;
+        padding: 20px 15px;
+        width: 100%;
+    }

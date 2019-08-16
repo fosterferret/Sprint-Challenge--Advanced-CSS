@@ -1,0 +1,76 @@
+.field-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+    @media @mobile {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .btn {
+        margin-bottom: 15px;
+        .buttonGenerator();
+        &:hover {
+          animation: bounce 1s;
+      }
+      @media @mobile {
+          .buttonGenerator(@width: 100%);
+          margin-bottom: 15px;
+      }
+      
+      }
+
+      input {
+        .inputGenerator();
+    }
+}
+
+.field-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px auto 10px;
+
+        label {
+            font-size: 1.6rem;
+            margin-bottom: 6px;
+        }
+
+        select {
+            background-size: 11px 6px;
+            border-radius: 3px;
+            border: 1px solid rgba(3,54,61,.25);
+            box-shadow: none;
+            color: rgba(81,106,110,.73);
+            height: 100%;
+            opacity: 1;
+            outline: 0;
+            padding: 40px 15px;
+            position: relative;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .select-wrap {
+            position: relative;
+            height: 50px;
+        }
+}
+
+
+form textarea {
+    background: #fcfdfd;
+    border-radius: 3px;
+    border: 1px solid rgba(3,54,61,.25);
+    box-shadow: none;
+    color: rgba(17,51,56,.73);
+    font: 16px/22px "Proxima Nova",Arial,sans-serif;
+    height: 150px;
+    min-height: 150px;
+    padding: 15px;
+    resize: vertical;
+    width: 100%;
+}
